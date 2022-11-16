@@ -1,0 +1,12 @@
+{% extends 'indicator/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+
+    {% for key, value in obj.items %}
+        <p>{{key}}: {{value}}</p>
+    {% endfor %}
+
+{% endblock %}
